@@ -118,14 +118,14 @@
         <table>
           <tr>
             <td class="title">
-              <h1>Hospital Management</h1>
+              <h1>Quản Lý Bệnh Viện</h1>
             </td>
 
             <td>
 
-              Admit Date: {{admitDate}}<br>
-              Release Date: {{todayDate}}<br>
-              Days Spent: {{day}}
+              Ngày làm việc: {{admitDate}}<br>
+              Ngày phát hành: {{todayDate}}<br>
+              Số ngày đã hoạt động: {{day}}
             </td>
           </tr>
         </table>
@@ -137,13 +137,13 @@
         <table>
           <tr>
             <td>
-              Patient Name : {{name}}<br>
-              Patient Mobile : {{mobile}}<br>
-              Patient Addres : {{address}}<br>
+              Tên Bệnh Nhân : {{name}}<br>
+              Số di động : {{mobile}}<br>
+              Địa chỉ : {{address}}<br>
             </td>
 
             <td>
-              Doctor Name :<br>
+              Tên Bác Sĩ :<br>
               {{assignedDoctorName}}<br>
 
             </td>
@@ -154,7 +154,7 @@
 
     <tr class="heading">
       <td>
-        Disease and Symptoms
+        Bệnh và Triệu chứng
       </td>
       <td>
 
@@ -169,17 +169,17 @@
     </tr>
     <tr class="heading">
       <td>
-        Item
+        Mục
       </td>
 
       <td>
-        Price
+        Giá
       </td>
     </tr>
 
     <tr class="item">
       <td>
-        Room Charge of {{day}} Days
+        Phí phòng của {{day}} ngày
       </td>
 
       <td>
@@ -189,7 +189,7 @@
 
     <tr class="item">
       <td>
-        Doctor Fee
+        Phí bác sĩ
       </td>
 
       <td>
@@ -199,7 +199,7 @@
 
     <tr class="item">
       <td>
-        Medicine Cost
+        Chi phí thuốc
       </td>
 
       <td>
@@ -209,7 +209,7 @@
 
     <tr class="item last">
       <td>
-        Other Charge
+        Phí khác
       </td>
 
       <td>
@@ -221,7 +221,7 @@
       <td></td>
 
       <td>
-        Total Rupees : {{total}}
+        Tổng VND : {{total}}
       </td>
     </tr>
 
@@ -229,12 +229,12 @@
 </div>
 <br><br>
 <div class="download">
-  <a style="background:red; width:500px;" href="{% url 'download-pdf' patientId  %}">Download</a>
+  <a style="background:red; width:500px;" href="{% url 'download-pdf' patientId  %}">Tải Về</a>
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
+{#<!--#}
+{#developed By : sumit kumar#}
+{#facebook : fb.com/sumit.luv#}
+{#youtube : youtube.com/lazycoders#}
+{#-->#}
 
 {% endblock content %}
